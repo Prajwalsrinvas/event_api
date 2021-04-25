@@ -34,7 +34,7 @@ An API created using FastAPI to provide us information on important events that 
   - deploys API on localhost using uvicorn server
 
 
-### References:
+## References:
 
 - [FastAPI and Web Scraping in Python - Part 1: Project Setup and Scraping](https://www.youtube.com/watch?v=Nni0HX9O4hc)
 - [FastAPI and Web Scraping in Python - Part 2: FastAPI](https://www.youtube.com/watch?v=hOipXax0Ogw)
