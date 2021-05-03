@@ -4,13 +4,40 @@ An API created using FastAPI to provide us information on important events that 
 
 ## endpoints
 
-- / : acts as homepage
-- /events : returns all events information 
-- /events/today : returns events that occurred on current month and day
-- /events/{month} : returns events that occurred on particular month, ex: /months/november
-- /events/{month}/{day} : returns events that occurred on particular day and month, ex: /events/november/6
-- /docs : API documentation automatically created by FastAPI using [Swagger UI](https://swagger.io/tools/swagger-ui/)
-- /redoc: API documentation automatically created by FastAPI using [redoc](https://github.com/Redocly/redoc)
+- [/](https://events-fastapi.herokuapp.com/) : acts as homepage
+- [/events](https://events-fastapi.herokuapp.com/events) : returns all events information 
+- [/events/today](https://events-fastapi.herokuapp.com/events/today) : returns events that occurred on current month and day
+- [/events/{month}](https://events-fastapi.herokuapp.com/events/november) : returns events that occurred on particular month, ex: /months/november
+- [/events/{month}/{day}](https://events-fastapi.herokuapp.com/events/november/6) : returns events that occurred on particular day and month, ex: /events/november/6
+- [/docs](https://events-fastapi.herokuapp.com/docs) : API documentation automatically created by FastAPI using [Swagger UI](https://swagger.io/tools/swagger-ui/)
+- [/redoc](https://events-fastapi.herokuapp.com/redoc): API documentation automatically created by FastAPI using [redoc](https://github.com/Redocly/redoc)
+
+## Screenshots
+
+### Homepage
+
+![home](https://github.com/Prajwalsrinvas/event_api/blob/main/screenshots/1.home.png)
+
+### Documentation
+
+![docs](https://github.com/Prajwalsrinvas/event_api/blob/main/screenshots/2.docs.png)
+
+### All events
+
+![all events](https://github.com/Prajwalsrinvas/event_api/blob/main/screenshots/3.events.png)
+
+### Events that occurred on today's date
+
+![today events](https://github.com/Prajwalsrinvas/event_api/blob/main/screenshots/4.events_today.png)
+
+### Events that occurred on a particular month
+
+![monthly events](https://github.com/Prajwalsrinvas/event_api/blob/main/screenshots/5.events_november.png)
+
+### Events that occurred on a particular day of the month
+
+![daily events](https://github.com/Prajwalsrinvas/event_api/blob/main/screenshots/6.events_november_6.png)
+
 
 ## file descriptions
 
