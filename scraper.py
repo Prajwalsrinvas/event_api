@@ -7,14 +7,12 @@ from bs4 import BeautifulSoup
 
 
 def _generate_url(month: str, day: int) -> str:
-    url = f'https://www.onthisday.com/day/{month}/{day}'
-    return url
+    return f'https://www.onthisday.com/day/{month}/{day}'
 
 
 def _get_page(url: str) -> BeautifulSoup:
     page = _requests.get(url)
-    soup = BeautifulSoup(page.content, 'lxml')
-    return soup
+    return BeautifulSoup(page.content, 'lxml')
 
 
 def events_of_the_day(month: str, day: int) -> List[str]:
@@ -24,5 +22,4 @@ def events_of_the_day(month: str, day: int) -> List[str]:
     url = _generate_url(month, day)
     page = _get_page(url)
     raw_events = page.find_all('li', class_='event')
-    events = [event.text for event in raw_events]
-    return events
+    return [event.text for event in raw_events]

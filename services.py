@@ -15,8 +15,7 @@ def get_events_of_month(month) -> Dict:
     month = month.lower()
     events = get_all_events()
     try:
-        month_events = events[month]
-        return month_events
+        return events[month]
     except KeyError:
         raise HTTPException(status_code=404, detail="Wrong month!")
 
@@ -26,8 +25,7 @@ def get_events_of_day(month: str, day: int) -> Dict:
     day = str(day)
     events = get_all_events()
     try:
-        month_events = events[month][day]
-        return month_events
+        return events[month][day]
     except KeyError:
         if not events.get(month):
             raise HTTPException(status_code=404, detail="Wrong month!")
