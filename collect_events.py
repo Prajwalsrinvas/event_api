@@ -18,7 +18,7 @@ def create_events_dict() -> Dict:
         month = date.strftime("%B").lower()
         day = date.day
         if month not in events:
-            events[month] = dict()
+            events[month] = {}
         print(f"Getting details of events that ocurred on {month} {day}")
         events[month][date.day] = _scraper.events_of_the_day(month, day)
     print("All events details collected!")
